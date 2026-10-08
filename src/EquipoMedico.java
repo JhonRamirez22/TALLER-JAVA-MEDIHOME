@@ -5,7 +5,7 @@ public class EquipoMedico {
     private String codigo;
     private String nombre;
     private String zonaCobertura;
-    private List<ProfesionalSalud> profesionales; // soluciona la agregacion
+    private List<ProfesionalSalud> profesionales = new ArrayList<>();
 
     public EquipoMedico() {
     }
@@ -47,11 +47,8 @@ public class EquipoMedico {
     public void agregarProfesional(ProfesionalSalud profesional) {
         profesionales.add(profesional);
     }
+
     public void quitarProfesional(ProfesionalSalud profesional) {
         profesionales.remove(profesional);
-
-
-
-
     }
 }
